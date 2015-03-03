@@ -1,0 +1,297 @@
+@import "base.css";
+@import "lato-font-family.css";
+
+body.home{
+	background-color: #880000;
+	background-image: url('../img/capa-peb.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+body div[role=header]{
+	height: 50%;
+}
+body.home div[role=content]{
+	height: 30%;
+}
+body.home div[role=footer]{
+	height: 20%;
+}
+body.home div[role=content] div.panel{
+	background-color: #EE0000;
+	box-shadow: 1px 1px 2px #880000;
+	border: none;
+}
+body.home div[role=content] div.panel{
+	padding-left: 0;
+	padding-right: 0;
+}
+body.home div[role=content] div.panel h3,
+body.home div[role=content] div.panel h2{
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+}
+body.home div[role=content] div.panel h2{
+	font-size: 2em;
+}
+body.home div[role=content] div.panel h3{
+	text-transform: none;
+	font-size: 1.25em;
+}
+body.home div[role=content] div.panel,
+body:not(.home) div[role=content]{
+	/*rotate*/
+		-moz-transform: rotate(355deg);
+		-webkit-transform: rotate(355deg);
+		-webkit-backface-visibility: hidden;
+		-o-transform: rotate(355deg);
+		-ms-transform: rotate(355deg);
+		transform: rotate(355deg);
+	/*rotate*/
+}
+body:not(.home){
+	background-color: #880000;
+	box-shadow: 0px 0px 5px #880000;
+	max-width: 95vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5vh;
+	padding: 5vh;
+}
+body:not(.home) div[role=header]{
+	height: 2vh;
+	min-height: 1.2em;
+}
+body:not(.home) div[role=content]{
+	height: 85vh;
+	background-color: #880000;
+}
+body:not(.home) div[role=footer]{
+	margin-top: -5vh;
+	height: 5vh;
+	min-height: 2.4em;
+}
+body:not(.home) div[role=content] > *:not(.meses){
+	/*unrotate*/
+		-moz-transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+		-webkit-backface-visibility: hidden;
+		-o-transform: rotate(5deg);
+		-ms-transform: rotate(5deg);
+		transform: rotate(5deg);
+	/*unrotate*/
+}
+body:not(.home) div[role=content] > div.row:first-child > div.column:last-child,
+body:not(.home) div[role=content] > div.row:first-child > div.columns:last-child{
+	margin-top: -3em;
+}
+body:not(.home) div[role=content]{
+	padding: 10vh 5vw 0;
+	background-color: #FFFFFF;
+}
+body:not(.home) div[role=content-header] h3{
+	position: relative;
+	z-index: 10;
+}
+body:not(.home) h3{
+	text-shadow: 0 0 5px #FFFFFF;
+}
+body:not(.home) div[role=content-header] img.sup-dir{
+	position: relative;
+	bottom: 6em;
+	left: 25%;
+	margin-bottom: -8em;
+}
+body:not(.home) div[role=content-header] img.sup-esq{
+	position: relative;
+	bottom: 6em;
+	right: 25%;
+	margin-bottom: -8em;
+}
+body:not(.home) div[role=content-header] img{
+	position: relative;
+	z-index: 5;
+}
+body:not(.home) div[role=content-header]{
+	vertical-align: middle;	
+}
+body.calendario div[role=content] div.row > div:nth-child(1) div.panel{
+	background-color: #888888;
+}
+body.calendario div[role=content] div.row > div:nth-child(2) div.panel{
+	background-color: #EE1122;
+}
+body.calendario div[role=content] div.row > div:nth-child(3) div.panel{
+	background-color: #CC1111;
+}
+body.calendario div[role=content] div.row > div:nth-child(4) div.panel{
+	background-color: #AAAAAA;
+}
+body.calendario div[role=content] div.row > div:nth-child(5) div.panel{
+	background-color: #AA1111;
+}
+body.calendario div[role=content] div.row > div:nth-child(6) div.panel{
+	background-color: #555555;
+}
+body.calendario div[role=content] div.row > div:nth-child(7) div.panel{
+	background-color: #DD2222;
+}
+body.calendario div[role=content] div.row > div:nth-child(8) div.panel{
+	background-color: #880000;
+}
+body.calendario div[role=content] div.row > div:nth-child(9) div.panel{
+	background-color: #EE2222;
+}
+body.calendario div[role=content] div.row > div:nth-child(10) div.panel{
+	background-color: #888888;
+}
+body.calendario div[role=content] div.row > div:nth-child(11) div.panel{
+	background-color: #555555;
+}
+body.calendario div[role=content] div.row > div:nth-child(12) div.panel{
+	background-color: #DD2222;
+}
+body.calendario div[role=content] div.panel{
+	height: 95%;
+	border: 0;
+}
+body.calendario div[role=content] div.panel h5{
+	font-size: 1em;
+	font-weight: bold;
+}
+body.calendario div[role=content] div.panel h6{
+	font-weight: bold;
+}
+body.calendario div[role=content] div.panel p{
+}
+body.mes div[role=content-header] span.mes{
+	text-transform: none;
+	font-weight: 900;
+}
+body.mes div[role=content-header] span.mes:after{
+	content: " |";
+	font-weight: 900;
+}
+div.meses > div{
+	padding-left: 0em;
+	padding-right: 0.5em;
+	height: 20vh;
+}
+div.meses{
+	height: 95%;
+	margin-bottom: 0.5em;
+	/*unrotate skew*/
+		-moz-transform: rotate(5deg)  skewX(5deg);
+		-webkit-transform: rotate(5deg) skewX(5deg);
+		-webkit-backface-visibility: hidden;
+		-o-transform: rotate(5deg) skewX(5deg);
+		-ms-transform: rotate(5deg)  skewX(5deg);
+		transform: rotate(5deg)  skewX(5deg);
+	/*unrotate skew*/
+	}
+div.meses > *{
+	/*unskew*/
+	-moz-transform: skewX(-5deg);
+	-webkit-transform: skewX(-5deg);
+	-o-transform: skewX(-5deg);
+	-ms-transform: skewX(-5deg);
+	transform: skewX(-5deg);
+	/*unskew*/
+}
+div.panel.mes h3,
+div.panel.mes h6,
+div.panel.mes p {
+	color: #FFFFFF;
+}
+div[role=footer] img {
+	max-height: 100%;
+}
+div[role=content] h3 img{
+	max-width: 50%;
+}
+div.cantoneiras {
+	border: dotted #EE0000 10px;
+	border-image-source: url('../img/cantoneiras-bordas.png');
+	border-image-slice: 100;
+	border-image-width: 5;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+div.cantoneiras > *:last-child{
+	margin-bottom: 0.5em;
+}
+div.cantoneiras > *:nth-child(1){
+	margin-top: 0.5em;
+}
+div.box{
+	padding: 0.5em;
+}
+div.box + div.box {
+	margin-top: 5px;
+}
+div.box.cinza{
+	background-color: #EEEEEE;
+}
+div.box.dica{
+	background-color: #EEAA22;
+}
+div.box.dica *.box-title{
+	color: #FFFFFF;
+	text-transform: none;
+	font-size: 2em;
+	font-weight: 900;
+}
+img.meia-altura.borda-inf{
+	margin-bottom: -50%;
+	margin-top: -10%;
+}
+a.link-seta:not(.manter-texto){
+	width: 0;
+	color: transparent;
+	margin: 0 -1em;
+}
+a.link-seta:not(.voltar):after{
+	height: 1em;
+	width: 1em;
+	color: transparent;
+	background-image: url('../img/link-seta.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	content: "___";
+}
+a.link-seta.voltar:before{
+	height: 1em;
+	width: 1em;
+	color: transparent;
+	background-image: url('../img/link-seta-voltar.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	content: "___";
+}
+a.link-livro{
+	font-weight: bold;
+}
+a.link-livro:before{
+	color: transparent;
+	background-image: url('../img/icone-livro.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	content: "___";
+}
+a.link-contacao{
+	font-weight: bold;
+}
+a.link-contacao:before{
+	color: transparent;
+	background-image: url('../img/icone-contacao.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	content: "___";
+}
+div.centralizar{
+	text-align: center;
+	padding: 10%;
+	margin: auto;
+}
+}
