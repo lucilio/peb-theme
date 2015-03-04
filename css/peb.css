@@ -72,7 +72,8 @@ body:not(.home) div[role=footer]{
 	height: 5vh;
 	min-height: 2.4em;
 }
-body:not(.home) div[role=content] > *:not(.meses){
+body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir),
+#banner-dir img{
 	/*unrotate*/
 		-moz-transform: rotate(5deg);
 		-webkit-transform: rotate(5deg);
@@ -81,6 +82,7 @@ body:not(.home) div[role=content] > *:not(.meses){
 		-ms-transform: rotate(5deg);
 		transform: rotate(5deg);
 	/*unrotate*/
+	z-index: 5;
 }
 body:not(.home) div[role=content] > div.row:first-child > div.column:last-child,
 body:not(.home) div[role=content] > div.row:first-child > div.columns:last-child{
@@ -177,6 +179,42 @@ body.mes div[role=content-header] span.mes{
 body.mes div[role=content-header] span.mes:after{
 	content: " |";
 	font-weight: 900;
+}
+body.dicas div[role=content]{
+	overflow: hidden;
+}
+body.dicas div[role=content] ul,
+body.dicas div[role=content] ol,
+body.dicas div[role=content] dl,
+body.dicas div[role=content] div{
+	font-family: sans-serif;
+	font-size: 1rem;
+}
+body.dicas div[role=content] li{
+	font-family: sans-serif;
+	font-size: 1.1em;
+}
+body.dicas div[role=content-header] h2 {
+	position: relative;
+	margin-right: -20em;
+}
+body.dicas li.accordion-navigation a{
+	background-color: #FFFFFF;
+	color: #EE0000;
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+div#banner-dir{
+	position: absolute;
+	overflow: hidden;
+	margin: -10vh -5vw 0 0;
+	width: 75vw;
+	max-height: 150vh;
+}
+div#banner-dir img{
+	max-height: 125vh;
+	margin-top: -15vh;
+	margin-left: -12.5vw;
 }
 div.meses > div{
 	padding-left: 0em;
@@ -306,5 +344,4 @@ div.centralizar{
 	text-align: center;
 	padding: 10%;
 	margin: auto;
-}
 }
