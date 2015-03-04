@@ -94,20 +94,23 @@ body:not(.home) div[role=content-header] h3{
 	position: relative;
 	z-index: 10;
 }
-body:not(.home) h3{
+body:not(.home):not(.calendario) h2,
+body:not(.home):not(.calendario) h3{
 	text-shadow: 0 0 5px #FFFFFF;
 }
-body:not(.home) div[role=content-header] img.sup-dir{
+body:not(.home) div[role=content-header] div.img-sup-dir img{
 	position: relative;
 	bottom: 6em;
 	left: 25%;
 	margin-bottom: -8em;
+	z-index: 0;
 }
-body:not(.home) div[role=content-header] img.sup-esq{
+body:not(.home) div[role=content-header] div.img-sup-esq img{
 	position: relative;
 	bottom: 6em;
 	right: 25%;
 	margin-bottom: -8em;
+	z-index: 0;
 }
 body:not(.home) div[role=content-header] img{
 	position: relative;
@@ -163,7 +166,9 @@ body.calendario div[role=content] div.panel h5{
 body.calendario div[role=content] div.panel h6{
 	font-weight: bold;
 }
-body.calendario div[role=content] div.panel p{
+body.mes div[role=content-header] div.img-sup-esq + div h2{
+	margin-top: 1.5em;
+	margin-left: -4em;
 }
 body.mes div[role=content-header] span.mes{
 	text-transform: none;
@@ -226,9 +231,11 @@ div.cantoneiras > *:nth-child(1){
 }
 div.box{
 	padding: 0.5em;
+	overflow: hidden;
 }
 div.box + div.box {
 	margin-top: 5px;
+	margin-left: 5px;
 }
 div.box.cinza{
 	background-color: #EEEEEE;
@@ -269,7 +276,9 @@ a.link-seta.voltar:before{
 	background-repeat: no-repeat;
 	content: "___";
 }
-a.link-livro{
+a.link-livro,
+a.link-contacao,
+a.link-debate{
 	font-weight: bold;
 }
 a.link-livro:before{
@@ -279,12 +288,16 @@ a.link-livro:before{
 	background-repeat: no-repeat;
 	content: "___";
 }
-a.link-contacao{
-	font-weight: bold;
-}
 a.link-contacao:before{
 	color: transparent;
 	background-image: url('../img/icone-contacao.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	content: "___";
+}
+a.link-debate:before{
+	color: transparent;
+	background-image: url('../img/icone-debate.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	content: "___";
