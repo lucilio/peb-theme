@@ -268,6 +268,27 @@ div.panel.mes h6,
 div.panel.mes p {
 	color: #FFFFFF;
 }
+div.detalhe.rodape{
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+}
+div.detalhe.rodape.direita{
+	height: 15vh;
+	width: 15vh;
+	left: 7.5vh;
+	top: -7.5vh;
+	margin-right: 0.5em;
+}
+div.detalhe.rodape.esquerda{
+	height: 15vh;
+	width: 15vh;
+	left: -7.5vh;
+	margin-left: 0.5em;
+}
 div[role=footer] img {
 	max-height: 100%;
 }
@@ -415,7 +436,8 @@ div.centralizar{
 div.panel.vermelho h3 a{
 	color: #FFFFFF !important;
 	margin: 0;
-}div.panel.vermelho h3 a{
+}
+div.panel.vermelho h3 a{
 	color: inherit !important;
 	margin: 0;
 }
