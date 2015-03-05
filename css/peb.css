@@ -298,12 +298,13 @@ div.box + div.box {
 	margin-top: 5px;
 	margin-left: 5px;
 }
+div.panel{
+	border:none;
+}
 div.cinza{
-	border: none;
 	background-color: #EEEEEE;
 }
 div.vermelho{
-	border:none;
 	background-color: #880000;
 	color: #FFFFFF;
 }
@@ -417,4 +418,7 @@ div.panel.vermelho h3 a{
 }div.panel.vermelho h3 a{
 	color: inherit !important;
 	margin: 0;
+}
+*.tarja-branca{
+	background-color: #FFFFFF;
 }
