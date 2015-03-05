@@ -1,6 +1,12 @@
 @import "base.css";
 @import "lato-font-family.css";
 
+html{
+	font-size: 1.75vh;
+}
+body div[role=header]{
+	height: 50%;
+}
 body.home{
 	background-color: #880000;
 	background-image: url('../img/capa-peb.jpg');
@@ -8,8 +14,8 @@ body.home{
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-body div[role=header]{
-	height: 50%;
+body.home a{
+	color: #FFFFFF;
 }
 body.home div[role=content]{
 	height: 30%;
@@ -96,8 +102,8 @@ body:not(.home) div[role=content-header] h3{
 	position: relative;
 	z-index: 10;
 }
-body:not(.home):not(.calendario) h2,
-body:not(.home):not(.calendario) h3{
+div.img-sup-dir + div h2,
+div.img-sup-dir + div h3{
 	text-shadow: 0 0 5px #FFFFFF;
 }
 body:not(.home) div[role=content-header] div.img-sup-dir img{
@@ -204,6 +210,21 @@ body.dicas li.accordion-navigation a{
 	font-size: 1.4em;
 	text-transform: uppercase;
 }
+body.uso div[role=content]{
+	background-image: url('../img/fundo-uso.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+body.sumario div[role=content]{
+	background-image: url('../img/fundo-sumario.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+body.sumario div.box.vermelho li{
+	list-style-type: none;
+	font-size: 1.25em;
+}
 div#banner-dir{
 	position: absolute;
 	overflow: hidden;
@@ -268,20 +289,48 @@ div.cantoneiras > *:nth-child(1){
 	margin-top: 0.5em;
 }
 div.box{
-	padding: 0.5em;
 	overflow: hidden;
+}
+div.box.ilustrado{
+	overflow: visible;
 }
 div.box + div.box {
 	margin-top: 5px;
 	margin-left: 5px;
 }
-div.box.cinza{
+div.cinza{
+	border: none;
 	background-color: #EEEEEE;
 }
-div.box.dica{
+div.vermelho{
+	border:none;
+	background-color: #880000;
+	color: #FFFFFF;
+}
+div.vermelho.claro{
+	background-color: #EE0000;
+}
+div.vermelho p,
+div.vermelho li,
+div.vermelho h1,
+div.vermelho h2,
+div.vermelho h3,
+div.vermelho h4,
+div.vermelho h5,
+div.vermelho h6,
+div.vermelho h1 a,
+div.vermelho h2 a,
+div.vermelho h3 a,
+div.vermelho h4 a,
+div.vermelho h5 a,
+div.vermelho h6 a{
+	color: #FFFFFF;
+	text-shadow: none;
+}
+div.dica{
 	background-color: #EEAA22;
 }
-div.box.dica *.box-title{
+div.dica *.box-title{
 	color: #FFFFFF;
 	text-transform: none;
 	font-size: 2em;
@@ -290,6 +339,21 @@ div.box.dica *.box-title{
 img.meia-altura.borda-inf{
 	margin-bottom: -50%;
 	margin-top: -10%;
+}
+img.img-sup-dir{
+	position: relative;
+	float: right;
+	width: 15em;
+	top: -3.75em;
+	margin-right: -7.5em;
+}
+img.detalhe.rodape{
+	display: block;
+	height:7em;
+	margin-top:0.6em;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: -4em;
 }
 a.link-seta:not(.manter-texto){
 	width: 0;
@@ -303,6 +367,7 @@ a.link-seta:not(.voltar):after{
 	background-image: url('../img/link-seta.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	margin-left: 0.5em;
 	content: "___";
 }
 a.link-seta.voltar:before{
@@ -312,6 +377,7 @@ a.link-seta.voltar:before{
 	background-image: url('../img/link-seta-voltar.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	margin-right: 0.5em;
 	content: "___";
 }
 a.link-livro,
@@ -344,4 +410,11 @@ div.centralizar{
 	text-align: center;
 	padding: 10%;
 	margin: auto;
+}
+div.panel.vermelho h3 a{
+	color: #FFFFFF !important;
+	margin: 0;
+}div.panel.vermelho h3 a{
+	color: inherit !important;
+	margin: 0;
 }
