@@ -91,8 +91,8 @@ body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir),
 	/*unrotate*/
 	z-index: 5;
 }
-body:not(.home) div[role=content] > div.row:first-child > div.column:last-child,
-body:not(.home) div[role=content] > div.row:first-child > div.columns:last-child{
+body:not(.home):not(.mes) div[role=content] > div.row:first-child > div.column:last-child,
+body:not(.home):not(.mes) div[role=content] > div.row:first-child > div.columns:last-child{
 	margin-top: -7.5em;
 }
 body:not(.home) div[role=content]{
