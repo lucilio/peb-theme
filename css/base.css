@@ -1,12 +1,10 @@
-@import "lato-font-family.css";
-
 html{
 	background-color: #FFFFFF;
 	font-size: 12px;
 }
 body{
 	background-color: #FFFFFF;
-	font-family: Lato;
+	font-family: Verdana,sans-serif;
 }
 h1{
 	font-size: 3em;
@@ -28,7 +26,7 @@ h6{
 	font-weight: bold;
 }
 h1, h2, h3, h4, h5{
-	font-family: Lato;
+	font-family: Verdana,sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 }
