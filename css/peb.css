@@ -91,12 +91,12 @@ body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir),
 	/*unrotate*/
 	z-index: 5;
 }
-body:not(.home):not(.mes) div[role=content] > div.row:first-child > div.column:last-child,
-body:not(.home):not(.mes) div[role=content] > div.row:first-child > div.columns:last-child{
+body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.column:last-child,
+body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.columns:last-child{
 	margin-top: -7.5em;
 }
 body:not(.home) div[role=content]{
-	padding: 10vh 5vw 0;
+	padding: 5rem 2rem 0;
 	background-color: #FFFFFF;
 }
 body:not(.home) div[role=content-header] h3{
@@ -211,7 +211,8 @@ body.dicas div[role=content-header] h2 {
 body.dicas li.accordion-navigation a{
 	background-color: #FFFFFF;
 	color: #EE0000;
-	font-size: 1.4em;
+	font-size: 1.1em;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 body.uso div[role=content]{
@@ -233,7 +234,7 @@ body.sumario div.box.vermelho li{
 div#banner-dir{
 	position: absolute;
 	overflow: hidden;
-	margin: -10vh -5vw 0 0;
+	margin: -20vh -5vw 0 0;
 	width: 75vw;
 	max-height: 150vh;
 }
@@ -466,6 +467,9 @@ div.perfil img {
 	float: left;
 	margin-right: -0.5em;
 	margin-bottom: -0.5rem;
+}
+div#content-esq{
+	margin-top: -1em;
 }
 *.tarja-branca{
 	background-color: #FFFFFF;
