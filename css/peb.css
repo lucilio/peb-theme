@@ -93,7 +93,7 @@ body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir),
 }
 body:not(.home) div[role=content] > div.row:first-child > div.column:last-child,
 body:not(.home) div[role=content] > div.row:first-child > div.columns:last-child{
-	margin-top: -3em;
+	margin-top: -7.5em;
 }
 body:not(.home) div[role=content]{
 	padding: 10vh 5vw 0;
@@ -132,43 +132,43 @@ body:not(.home) div[role=content-header] img{
 body:not(.home) div[role=content-header]{
 	vertical-align: middle;	
 }
-body.calendario div[role=content] div.row > div:nth-child(1) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(1) div.panel.mes{
 	background-color: #888888;
 }
-body.calendario div[role=content] div.row > div:nth-child(2) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(2) div.panel.mes{
 	background-color: #EE1122;
 }
-body.calendario div[role=content] div.row > div:nth-child(3) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(3) div.panel.mes{
 	background-color: #CC1111;
 }
-body.calendario div[role=content] div.row > div:nth-child(4) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(4) div.panel.mes{
 	background-color: #AAAAAA;
 }
-body.calendario div[role=content] div.row > div:nth-child(5) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(5) div.panel.mes{
 	background-color: #AA1111;
 }
-body.calendario div[role=content] div.row > div:nth-child(6) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(6) div.panel.mes{
 	background-color: #555555;
 }
-body.calendario div[role=content] div.row > div:nth-child(7) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(7) div.panel.mes{
 	background-color: #DD2222;
 }
-body.calendario div[role=content] div.row > div:nth-child(8) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(8) div.panel.mes{
 	background-color: #880000;
 }
-body.calendario div[role=content] div.row > div:nth-child(9) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(9) div.panel.mes{
 	background-color: #EE2222;
 }
-body.calendario div[role=content] div.row > div:nth-child(10) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(10) div.panel.mes{
 	background-color: #888888;
 }
-body.calendario div[role=content] div.row > div:nth-child(11) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(11) div.panel.mes{
 	background-color: #555555;
 }
-body.calendario div[role=content] div.row > div:nth-child(12) div.panel{
+body.calendario div[role=content] div.row > div:nth-child(12) div.panel.mes{
 	background-color: #DD2222;
 }
-body.calendario div[role=content] div.panel{
+body.calendario div[role=content] div.panel.mes{
 	height: 95%;
 	border: 0;
 }
