@@ -44,6 +44,10 @@ body.home div[role=content] div.panel h3{
 	text-transform: none;
 	font-size: 1.25em;
 }
+body.home a.link-seta:not(.voltar):after{
+	background-image: url('../img/link-seta.png');
+	margin-left: -0.5em;
+}
 body.home div[role=content] div.panel,
 body:not(.home) div[role=content]{
 	/*rotate*/
@@ -333,7 +337,10 @@ div.panel h6{
 	text-shadow: none;
 }
 div.cinza{
-	background-color: #EEEEEE;
+	background-color: #E7E7E7;
+}
+div.chumbo{
+	background-color: #666666;
 }
 div.vermelho{
 	background-color: #880000;
@@ -342,20 +349,20 @@ div.vermelho{
 div.vermelho.claro{
 	background-color: #EE0000;
 }
-div.vermelho p,
-div.vermelho li,
-div.vermelho h1,
-div.vermelho h2,
-div.vermelho h3,
-div.vermelho h4,
-div.vermelho h5,
-div.vermelho h6,
-div.vermelho h1 a,
-div.vermelho h2 a,
-div.vermelho h3 a,
-div.vermelho h4 a,
-div.vermelho h5 a,
-div.vermelho h6 a{
+div.vermelho p, div.chumbo p,
+div.vermelho li, div.chumbo li,
+div.vermelho h1, div.chumbo h1,
+div.vermelho h2, div.chumbo h2,
+div.vermelho h3, div.chumbo h3,
+div.vermelho h4, div.chumbo h4,
+div.vermelho h5, div.chumbo h5,
+div.vermelho h6, div.chumbo h6,
+div.vermelho h1 a, div.chumbo h1 a,
+div.vermelho h2 a, div.chumbo h2 a,
+div.vermelho h3 a, div.chumbo h3 a,
+div.vermelho h4 a, div.chumbo h4 a,
+div.vermelho h5 a, div.chumbo h5 a,
+div.vermelho h6 a, div.chumbo h6 a{
 	color: #FFFFFF;
 	text-shadow: none;
 }
