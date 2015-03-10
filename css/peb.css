@@ -456,6 +456,10 @@ a.link-debate:before{
 	background-repeat: no-repeat;
 	content: "___";
 }
+a.link-sumario{
+	position: relative;
+	left: -3em;
+}
 div.centralizar{
 	text-align: center;
 	padding: 10%;
@@ -481,6 +485,7 @@ div.perfil img {
 div#content-esq{
 	margin-top: -1em;
 }
+
 *.tarja-branca{
 	background-color: #FFFFFF;
 }
