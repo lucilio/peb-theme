@@ -236,6 +236,11 @@ body.sumario div.box.vermelho li{
 	list-style-type: none;
 	font-size: 1.25em;
 }
+body.sumario div.box.vermelho li a{
+	color: #FFFFFF;
+	font-weight: bold;
+	line-height: 1.2em;
+}
 div#banner-dir{
 	position: absolute;
 	overflow: hidden;
