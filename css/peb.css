@@ -91,6 +91,11 @@ body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir),
 	/*unrotate*/
 	z-index: 5;
 }
+body:not(.home) div.panel:not(.mes).vermelho > *,
+body:not(.home) div.panel:not(.mes).cinza > *,
+body:not(.home) div.panel:not(.mes).chumbo > *{
+	font-size: 0.85em;
+}
 body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.column:last-child,
 body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.columns:last-child{
 	margin-top: -7.5em;

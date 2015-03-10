@@ -1,10 +1,10 @@
 html{
 	background-color: #FFFFFF;
+	font-size: 12px;
 }
 body{
 	background-color: #FFFFFF;
 	font-family: verdana,sans-serif;
-	font-size: 9px;
 	text-shadow: 0 0 0 transparent;
 }
 h1{
