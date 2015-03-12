@@ -61,12 +61,21 @@ body.home div[role=content] div.panel h3{
 	}
 }
 body:not(.home){
+	padding: 5vh;
 	background-color: #880000;
-	max-width: 95vw;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 2.5vh;
-	padding: 5vh;
+}
+@media only screen and (min-width: 40.063em) {
+	body:not(.home){
+		margin-top: 2.5vh;
+		max-width: 95vw;
+	}
+}
+@media only screen and (max-width: 40.063em) {
+	body{
+		height: auto;
+	}
 }
 body:not(.home) div[role=header]{
 	height: 2vh;
