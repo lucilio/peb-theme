@@ -47,16 +47,18 @@ body.home div[role=content] div.panel h3{
 	text-transform: none;
 	font-size: 1.25em;
 }
-body.home div[role=content] div.panel,
-body:not(.home) div[role=content]{
-	/*rotate*/
-		-moz-transform: rotate(355deg);
-		-webkit-transform: rotate(355deg);
-		-webkit-backface-visibility: hidden;
-		-o-transform: rotate(355deg);
-		-ms-transform: rotate(355deg);
-		transform: rotate(355deg);
-	/*rotate*/
+@media only screen and (min-width: 40.063em) {
+	body.home div[role=content] div.panel,
+	body:not(.home) div[role=content]{
+		/*rotate*/
+			-moz-transform: rotate(355deg);
+			-webkit-transform: rotate(355deg);
+			-webkit-backface-visibility: hidden;
+			-o-transform: rotate(355deg);
+			-ms-transform: rotate(355deg);
+			transform: rotate(355deg);
+		/*rotate*/
+	}
 }
 body:not(.home){
 	background-color: #880000;
@@ -70,23 +72,27 @@ body:not(.home) div[role=header]{
 	height: 2vh;
 	min-height: 1.2em;
 }
-body:not(.home) div[role=content]{
-	height: 85vh;
-	background-color: #880000;
+@media only screen and (min-width: 40.063em) {
+	body:not(.home) div[role=content]{
+		height: 85vh;
+		background-color: #880000;
+	}
 }
 body:not(.home) div[role=footer] img{
 	margin-top: -2vh;
 }
-body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir){
-	/*unrotate*/
-		-moz-transform: rotate(5deg);
-		-webkit-transform: rotate(5deg);
-		-webkit-backface-visibility: hidden;
-		-o-transform: rotate(5deg);
-		-ms-transform: rotate(5deg);
-		transform: rotate(5deg);
-	/*unrotate*/
-	z-index: 5;
+@media only screen and (min-width: 40.063em) {
+	body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir){
+		/*unrotate*/
+			-moz-transform: rotate(5deg);
+			-webkit-transform: rotate(5deg);
+			-webkit-backface-visibility: hidden;
+			-o-transform: rotate(5deg);
+			-ms-transform: rotate(5deg);
+			transform: rotate(5deg);
+		/*unrotate*/
+		z-index: 5;
+	}
 }
 body:not(.home) div.panel:not(.mes).vermelho > *:not(.reset-font-size),
 body:not(.home) div.panel:not(.mes).cinza > *:not(.reset-font-size),
@@ -181,8 +187,15 @@ body.calendario div[role=content] div.panel h5{
 body.calendario div[role=content] div.panel h6{
 	font-weight: bold;
 }
-body.mes div[role=content-header] div.img-sup-esq + div h2{
+@media only screen and (min-width: 40.063em) {
+	body.mes div[role=content-header] div.img-sup-esq + div h2{
 	margin-left: -4em;
+	}
+}
+@media only screen and (max-width: 40.063em) {
+	body.mes div[role=content-header] h2{
+		background-color: rgba(255,255,255,0.8);
+	}
 }
 body.mes div[role=content-header] span.mes{
 	text-transform: none;
@@ -285,26 +298,28 @@ div.meses > div{
 	/* ---*/
 	height: 20vh;
 }
-div.meses{
-	height: 95%;
-	margin-bottom: 0.5em;
-	/*unrotate skew*/
-		-moz-transform: rotate(5deg)  skewX(5deg);
-		-webkit-transform: rotate(5deg) skewX(5deg);
-		-webkit-backface-visibility: hidden;
-		-o-transform: rotate(5deg) skewX(5deg);
-		-ms-transform: rotate(5deg)  skewX(5deg);
-		transform: rotate(5deg)  skewX(5deg);
-	/*unrotate skew*/
+@media only screen and (min-width: 40.063em) {
+	div.meses{
+		height: 95%;
+		margin-bottom: 0.5em;
+		/*unrotate skew*/
+			-moz-transform: rotate(5deg)  skewX(5deg);
+			-webkit-transform: rotate(5deg) skewX(5deg);
+			-webkit-backface-visibility: hidden;
+			-o-transform: rotate(5deg) skewX(5deg);
+			-ms-transform: rotate(5deg)  skewX(5deg);
+			transform: rotate(5deg)  skewX(5deg);
+		/*unrotate skew*/
+		}
+	div.meses > *{
+		/*unskew*/
+		-moz-transform: skewX(-5deg);
+		-webkit-transform: skewX(-5deg);
+		-o-transform: skewX(-5deg);
+		-ms-transform: skewX(-5deg);
+		transform: skewX(-5deg);
+		/*unskew*/
 	}
-div.meses > *{
-	/*unskew*/
-	-moz-transform: skewX(-5deg);
-	-webkit-transform: skewX(-5deg);
-	-o-transform: skewX(-5deg);
-	-ms-transform: skewX(-5deg);
-	transform: skewX(-5deg);
-	/*unskew*/
 }
 div.panel.mes h3,
 div.panel.mes h6,
