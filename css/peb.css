@@ -16,6 +16,10 @@ body.home{
 body.home a{
 	color: #FFFFFF;
 }
+body.home div.icon-bar a i{
+	font-size: 3em;
+	color: #FFFFFF;
+}
 body.home div[role=content]{
 	height: 30%;
 }
@@ -73,8 +77,7 @@ body:not(.home) div[role=content]{
 body:not(.home) div[role=footer] img{
 	margin-top: -2vh;
 }
-body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir),
-#banner-dir img{
+body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir){
 	/*unrotate*/
 		-moz-transform: rotate(5deg);
 		-webkit-transform: rotate(5deg);
@@ -85,9 +88,9 @@ body:not(.home) div[role=content] > *:not(.meses):not(#banner-dir),
 	/*unrotate*/
 	z-index: 5;
 }
-body:not(.home) div.panel:not(.mes).vermelho > *,
-body:not(.home) div.panel:not(.mes).cinza > *,
-body:not(.home) div.panel:not(.mes).chumbo > *{
+body:not(.home) div.panel:not(.mes).vermelho > *:not(.reset-font-size),
+body:not(.home) div.panel:not(.mes).cinza > *:not(.reset-font-size),
+body:not(.home) div.panel:not(.mes).chumbo > *:not(.reset-font-size){
 	font-size: 0.85em;
 }
 body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.column:last-child,
@@ -201,7 +204,15 @@ body.dicas div[role=content] div{
 }
 body.dicas div[role=content] li{
 	font-family: sans-serif;
-	font-size: 1.1em;
+	font-size: 1em;
+}
+body.dicas div[role=content] li a{
+	margin-bottom: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+body.dicas div[role=content] li ul{
+	margin-top: 0;
 }
 body.dicas div[role=content-header] h2 {
 	position: relative;
@@ -220,6 +231,12 @@ body.uso div[role=content]{
 	background-position: center;
 	background-size: 100%;
 }
+body.uso div[role=content] div.panel li{
+	font-size: 11px;
+}
+body.uso div[role=content] div.panel h3{
+	font-size: 14px;
+}
 body.sumario div[role=content]{
 	background-image: url('../img/fundo-sumario.png');
 	background-repeat: no-repeat;
@@ -235,17 +252,30 @@ body.sumario div.box.vermelho li a{
 	font-weight: bold;
 	line-height: 1.2em;
 }
+body.introducao div.panel h3,
+body.introducao div.panel h4{
+	font-size: 1em;
+}
 div#banner-dir{
 	position: absolute;
 	overflow: hidden;
-	margin: -20vh -5vw 0 0;
-	width: 75vw;
-	max-height: 150vh;
+	margin-top: -20vh;
+	height: 102vh;
+	width: 136vh;
 }
 div#banner-dir img{
-	max-height: 125vh;
-	margin-top: -10vh;
-	margin-left: -12.5vw;
+	margin-left: -20vh;
+	height: 100%;
+}
+div#banner-dir div#banner-legenda {
+	position: absolute;
+	width: 25%;
+	top: 75%;
+	left: 0.5em;
+	padding: 0.5em;
+	background-color: #E7E7E7;
+	font-size: 0.9em;
+	z-index: 50;
 }
 div.meses > div{
 	padding-left: 0em;
@@ -304,6 +334,10 @@ div[role=footer] img {
 }
 div[role=content] h3 img{
 	max-width: 50%;
+}
+div[role=content-wrap]{
+	padding-left: 0.5em;
+	padding-right: 1.5em;
 }
 div.panel.cantoneiras {
 	border: dotted #EE0000 10px;
@@ -401,7 +435,7 @@ img.img-sup-dir{
 }
 img.detalhe.rodape{
 	display: block;
-	height:7em;
+	max-height:10em;
 	margin-top:0.6em;
 	margin-left:auto;
 	margin-right: auto;
@@ -436,25 +470,34 @@ a.link-debate{
 	font-weight: bold;
 }
 a.link-livro:before{
-	color: transparent;
+	display: inline-block;
+	vertical-align: middle;
 	background-image: url('../img/icone-livro.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	content: "___";
+	height: 2em;
+	width: 2em;
+	content: "";
 }
 a.link-contacao:before{
-	color: transparent;
+	display: inline-block;
+	vertical-align: middle;
 	background-image: url('../img/icone-contacao.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	content: "___";
+	height: 2em;
+	width: 2em;
+	content: "";
 }
 a.link-debate:before{
-	color: transparent;
+	display: inline-block;
+	vertical-align: middle;
 	background-image: url('../img/icone-debate.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	content: "___";
+	height: 2em;
+	width: 2em;
+	content: "";
 }
 a.link-sumario{
 	position: relative;
@@ -498,10 +541,6 @@ div.icon-bar{
 	max-width: 300px;
 	z-index: 10;
 }
-body.home div.icon-bar a i{
-	font-size: 3em;
-	color: #FFFFFF;
-}
 *.tarja-branca{
 	background-color: #FFFFFF;
 }
@@ -511,4 +550,18 @@ body.home div.icon-bar a i{
 *.icon-bar a:hover i{
 	font-size: 2em;
 	color: #EEAA22;
+}
+*.no-bullets li{
+	list-style-type: none;
+	margin-bottom: 1.2em;
+}
+*.reset-font-size{
+	font-size: 1em;
+}
+*.reset-font-size-root{
+	font-size: 1rem;
+}
+*.negrito,
+*.negrito *:not(.nao-herdar){
+	font-weight: bold;
 }

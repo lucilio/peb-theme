@@ -1,0 +1,91 @@
+Geral
+Chrome: letras estão embaçadas. É no CSS isso, se precisar de ajuda avise.
+		Acho que consegui vencer os antialiasings do Chrome. Confira;
+Box vermelho: a borda ainda tem o shadow, também no CSS, idem.
+		Tirei. Esse eu mesmo tinha colocado pra suavizar o serrilhado do inclinado, mas agora está bem melhor.
+Casinha: tem como colocar um link relativo apontando para um sumário (sem os números de página, é claro)? E seria possível fixar ela na borda vinho? Idem pro logo do PEB
+
+Textos: em geral a entrelinha tá apertada demais e falta respiro.
+		Aumentei a entrelinha o máximo que deu sem que as páginas com mais texto ficassem com texto truncado. Mas realmente como tava, praticamente sem espaço entre as linhas, era absurdo.
+Títulos e subtítulos em vermelho precisam aumentar. Menos os do lado dos ícones de material completo e condução de debate.
+Ilustrações: foi uma ideia fraca minha te falar pra colocar o texto com fundo branco tampando a ilustração. Isso não deu certo, ficou feio. Desculpa.
+Ícones de material e debates estão cortados.
+Fotos de dicas e apresentação ficaram pequenas depois da mudança.
+
+Capa: tanto o título quanto o subtítulo podem aumentar um pouco. A setinha amarela grudou. O logo PEB caiu pra área branca. 
+		Ok
+Créditos: 
+	o corpo do texto inicial pode ser do mesmo tamanho dos créditos abaixo.
+		ok
+	Precisa aumentar o espaço entre o texto de cima e o título de baixo.
+		ok
+	A foto precisa também ser refeita, né?
+		ok
+	Falta uma legenda na foto.
+		ok
+	Talvez precise vc dar uma revisada na última versão do pdf.
+		acho que ok...
+Apresentação: foto pode aumentar e com a largura maior o texto pode desgrudar das bordas e da foto.
+		Foto maior significa menos espaço pro texto, não mais... daí ou fonte menor ou menos espaço de respiro... pus padding nas bordas laterais pra evitar que grudem nos extremos mas não vi maneira de aumentar o texto.
+Introdução: 
+	dá pra aumentar as imagens agora, né?
+		ok
+	Os títulos podem aumentar também.
+		ok
+	E faltam os links.
+		tem um link só (se é a versão que eu estou usando do pdf, a "corrigido2reduzido") o link está lá, embora a URL esteja sob o texo (por que é web, né, não faz muito sentido dar a URL pra pessoa clicar...)
+	Acho que dá pra descer um pouco os boxes também pra desgrudar do texto do meio.
+		feito
+	Um mistério, não sei porque as setinhas não funcionaram no FF, mas funcionaram no Chrome.
+		quando olhei estavam funcionando já. Pode ser por que antes os tamanhos das setas e os deslocamentos eram medidos em 'em' e agora está tudo em 'vh', que é melhor pra proporcionais
+Introdução 2:
+	setinha tá minúscula.
+	Os textos estão com a entrelinha muito apertada.
+		os dois problemas dependem do tamanho da fonte, então aumentei o tamanho das fontes dos boxes nessa página;
+Introdução 3:
+	idem.
+		evitando redução das fontes comum a tdos os boxes
+Calendário:
+	as datas têm mais peso do que as ações. Está invertido.
+		**falar** talvez já tenha sido mudado antes, ou eu não entendi
+	O nome do mês pode aumentar.
+		**falar** talvez já tenha sido mudado antes, ou eu não entendi
+	Falta o link de cima.
+		já feito
+	A ilustra de maio pode diminuir.
+		**falar** talvez já tenha sido mudado antes, ou eu não entendi
+Janeiro: se possível aumentar a entrelinha (meio geral pra tudo, se for possível). Aumentar o título e os subtítulos (acho que isso deve ser geral para os meses, com exceção dos títulos gigantes).
+		**falar** houve ajustes, ver se ainda não atende
+Fevereiro: 
+	uma setinha caiu. Será que tem como evitar isso? Ou colocar essas setas em outro lugar? //Viajando: em divs flutuantes do lado esquerdo e direito da tela, fora do branco, no meio?
+		as movi pro menu
+Março:
+	Já que aumentou a largura, dá pra alargar um pouco a coluna dos boxes e reduzir a coluna da atividade principal.Assim resolveria alguns problemas.
+		**falar** já resolveu?
+	Muito complicado colocar a foto como bg tomando o lado esquerdo todo?
+		Eu tinha cometido um erro, que era colocar o link "saiba mais" fora da caixa da direita. Corrigi isso, mas nesse caso específico, a foto tomar todo o lado esquerdo depende de ter menos conteúdo do lado direito (ou cortarmos a foto no overflow, o que vai dar resultados diferentes a cada tamanho de janela... é a solução que usei nas fotos das dicas e apresentação, que pegam o lado direito da página, mas aquelas fotos, pra mim, são decoração, essas têm informação, então achei melhor mostrá-las inteiras)
+Abril:
+	minha sugestão de colocar o texto em branco tampando a ilustração foi infeliz, desculpa. Do jeito que ficou não dá pra entender a ilustração.
+		dei um recuo NESSE título. 15% da largura, deve fazer sair sempre da área da ilustração. não interfere nos outros
+	Os titulinhos tipo saiba mais, atividades complementares tão muito pequenininhos...
+		**falar** ainda estão?
+Maio: acho que tudo já foi dito nos meses de cima.
+		fiz uma redistribuição que fugiu um bocado do original, mas fez caber todos os elementos. precisa olhar pra ver se é aceitável.
+Junho: o Em breve precisa ser maior.
+		feito
+Julho: 
+	o ícone pra condução de debates tá cortado.
+		corrigido
+	O legal seria o dicas abrir numa div flutuante, mas é texto demais, deixa assim mesmo.
+		muito texto mesmo. mesmo para uma página foi bastante e eu tive que por num "acordeão"...
+Agosto:
+	ícone de material completo está cortado.
+		corrigido
+	Descer o texto pra não ficar em cima da ilustração.
+		rearranjei geral
+Setembro:
+	ilustração cortada. Foto tá grande, talvez se colocar como bg isso melhore, porque ela pode ser cortada se o box for um pouco menor.
+		tirei do padrão (foto ocupando metade da largura do box) e acho que isso resolveu sem deixar horrível
+Outubro:
+	idem foto, idem ilustra, idem ícones. Box de complementares tá vazando, mas se vc diminuir a foto deve resolver.
+Dicas de debate e de contação de história: links não funcionam. Título de contação de história tá cortado.
