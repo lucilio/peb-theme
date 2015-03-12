@@ -280,6 +280,9 @@ div#banner-dir div#banner-legenda {
 div.meses > div{
 	padding-left: 0em;
 	padding-right: 0.5em;
+	/* Só para o Safari Mobile*/
+		height: 30%;
+	/* ---*/
 	height: 20vh;
 }
 div.meses{
