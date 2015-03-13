@@ -490,7 +490,6 @@ a.link-seta.voltar:before{
 }
 a.link-seta:not(.voltar):after{
 	background-image: url('../img/link-seta.png');
-	margin-left: 1em;
 }
 a.link-seta.voltar:before{
 	background-image: url('../img/link-seta-voltar.png');
