@@ -116,9 +116,9 @@ body:not(.home) div[role=content]{
 	padding: 5rem 2rem 0;
 	background-color: #FFFFFF;
 }
-body:not(.home) div[role=content-header] h3{
+body:not(.home) div[role=content-header] h3,
+body:not(.home) div[role=content-header] h3 a{
 	position: relative;
-	z-index: 10;
 }
 body:not(.home) div[role=content-header] div.img-sup-dir img{
 	position: relative;
@@ -257,7 +257,7 @@ body.uso div[role=content] div.panel li{
 	font-size: 11px;
 }
 body.uso div[role=content] div.panel h3{
-	font-size: 14px;
+	font-size: 13px;
 }
 body.sumario div[role=content]{
 	background-image: url('../img/fundo-sumario.png');
@@ -365,6 +365,10 @@ div[role=content] h3 img{
 div[role=content-wrap]{
 	padding-left: 0.5em;
 	padding-right: 1.5em;
+}
+div[role=content-footer]{
+	position: relative;
+	z-index: 0;
 }
 div.panel.cantoneiras {
 	border: dotted #EE0000 10px;
@@ -563,6 +567,7 @@ div#content-esq{
 }
 div.icon-bar{
 	position: fixed;
+	margin: 10px;
 	left: 1vh;
 	top: 1vh;
 	max-width: 300px;
