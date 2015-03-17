@@ -219,11 +219,9 @@ body.dicas div[role=content] ul,
 body.dicas div[role=content] ol,
 body.dicas div[role=content] dl,
 body.dicas div[role=content] div{
-	font-family:  "Lato";
 	font-size: 1rem;
 }
 body.dicas div[role=content] li{
-	font-family:  "Lato";
 	font-size: 1em;
 }
 body.dicas div[role=content] li a{
