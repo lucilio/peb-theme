@@ -105,7 +105,7 @@ body:not(.home) div[role=footer] img{
 body:not(.home) div.panel:not(.mes).vermelho > *:not(.reset-font-size),
 body:not(.home) div.panel:not(.mes).cinza > *:not(.reset-font-size),
 body:not(.home) div.panel:not(.mes).chumbo > *:not(.reset-font-size){
-	font-size: 0.85em;
+	font-size: 0.9em;
 }
 body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.column:last-child,
 body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.columns:last-child{
