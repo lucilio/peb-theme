@@ -1,4 +1,5 @@
 @import "base.css";
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext);
 @import "foundation-icons.css";
 html{
 	font-size: 1.75vh;
