@@ -53,7 +53,6 @@ body.home div[role=content] div.panel h3{
 		/*rotate*/
 			-moz-transform: rotate(355deg);
 			-webkit-transform: rotate(355deg);
-			-webkit-backface-visibility: hidden;
 			-o-transform: rotate(355deg);
 			-ms-transform: rotate(355deg);
 			transform: rotate(355deg);
@@ -95,7 +94,6 @@ body:not(.home) div[role=footer] img{
 		/*unrotate*/
 			-moz-transform: rotate(5deg);
 			-webkit-transform: rotate(5deg);
-			-webkit-backface-visibility: hidden;
 			-o-transform: rotate(5deg);
 			-ms-transform: rotate(5deg);
 			transform: rotate(5deg);
@@ -221,11 +219,11 @@ body.dicas div[role=content] ul,
 body.dicas div[role=content] ol,
 body.dicas div[role=content] dl,
 body.dicas div[role=content] div{
-	font-family: sans-serif;
+	font-family:  "Lato";
 	font-size: 1rem;
 }
 body.dicas div[role=content] li{
-	font-family: sans-serif;
+	font-family:  "Lato";
 	font-size: 1em;
 }
 body.dicas div[role=content] li a{
@@ -279,7 +277,6 @@ body.introducao div.panel h4{
 	font-size: 1em;
 }
 div#banner-dir{
-	position: absolute;
 	overflow: hidden;
 	margin-top: -20vh;
 	height: 100vh;
@@ -293,7 +290,7 @@ div#banner-dir img{
 }
 div#banner-dir div#banner-legenda {
 	position: absolute;
-	width: 25%;
+	width: 45%;
 	top: 75%;
 	left: 0.5em;
 	padding: 0.5em;
@@ -316,7 +313,6 @@ div.meses > div{
 		/*unrotate skew*/
 			-moz-transform: rotate(5deg)  skewX(5deg);
 			-webkit-transform: rotate(5deg) skewX(5deg);
-			-webkit-backface-visibility: hidden;
 			-o-transform: rotate(5deg) skewX(5deg);
 			-ms-transform: rotate(5deg)  skewX(5deg);
 			transform: rotate(5deg)  skewX(5deg);
@@ -564,7 +560,10 @@ div.perfil div.row{
 	padding: 0;
 }
 div#content-esq{
+	position: absolute;
 	margin-top: -1em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 div.icon-bar{
 	position: fixed;

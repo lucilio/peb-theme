@@ -5,7 +5,6 @@ html{
 body{
 	background-color: #FFFFFF;
 	font-family: verdana,sans-serif;
-	text-shadow: 0 0 0 transparent;
 }
 h1{
 	font-size: 3em;
@@ -33,7 +32,6 @@ h1, h2, h3, h4, h5{
 }
 p, dd, dt{
 	margin-bottom: 0.5em;
-	text-shadow: 0 0 0;
 }
 li{
 	margin-bottom: 0.2em;
