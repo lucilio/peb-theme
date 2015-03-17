@@ -573,6 +573,16 @@ div.icon-bar{
 	max-width: 300px;
 	z-index: 10;
 }
+div.modelo-calendario{
+	text-align: center;
+	margin-bottom: -2em;
+	height: 55vh;
+}
+div.modelo-calendario img{
+	position: relative;
+	top: -2em;
+	height: 100%;
+}
 *.tarja-branca{
 	background-color: #FFFFFF;
 }
