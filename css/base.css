@@ -34,6 +34,7 @@ p, dd, dt{
 }
 li{
 	margin-bottom: 0.2em;
+	font-family: Verdana;
 }
 h1, h2, h3, h4, h5, h6, ul, ol, dl{
 	margin-top: 1.3em;
