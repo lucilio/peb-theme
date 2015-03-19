@@ -102,10 +102,10 @@ body:not(.home) div[role=footer] img{
 		z-index: 5;
 	}
 }
-body:not(.home) div.panel:not(.mes).vermelho > *:not(.reset-font-size),
-body:not(.home) div.panel:not(.mes).cinza > *:not(.reset-font-size),
-body:not(.home) div.panel:not(.mes).chumbo > *:not(.reset-font-size){
-	font-size: 0.9em;
+body:not(.home) div.panel:not(.mes):not(.reset-font-size).vermelho > *:not(.reset-font-size),
+body:not(.home) div.panel:not(.mes):not(.reset-font-size).cinza > *:not(.reset-font-size),
+body:not(.home) div.panel:not(.mes):not(.reset-font-size).chumbo > *:not(.reset-font-size){
+	font-size: 0.95em;
 }
 body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.column:last-child,
 body:not(.home):not(.mes):not(.basico) div[role=content] > div.row:first-child > div.columns:last-child{
@@ -196,7 +196,7 @@ body.calendario div[role=content] div.panel h6{
 	font-weight: bold;
 }
 @media only screen and (min-width: 40.063em) {
-	body.mes div[role=content-header] div.img-sup-esq + div h2{
+	body.mes div[role=content-header] div.img-sup-esq + div:not(.sem-recuo) h2{
 	margin-left: -4em;
 	}
 }
@@ -212,6 +212,9 @@ body.mes div[role=content-header] span.mes{
 body.mes div[role=content-header] span.mes:after{
 	content: " |";
 	font-weight: 900;
+}
+body.mes div.panel:not(.transparente):not(.perfil){
+	padding: 0.5rem;
 }
 body.dicas div[role=content]{
 	overflow: hidden;
@@ -250,12 +253,6 @@ body.uso div[role=content]{
 	background-position: center;
 	background-size: 100%;
 }
-body.uso div[role=content] div.panel li{
-	font-size: 11px;
-}
-body.uso div[role=content] div.panel h3{
-	font-size: 13px;
-}
 body.sumario div[role=content]{
 	background-image: url('../img/fundo-sumario.png');
 	background-repeat: no-repeat;
@@ -264,16 +261,11 @@ body.sumario div[role=content]{
 }
 body.sumario div.box.vermelho li{
 	list-style-type: none;
-	font-size: 1.25em;
 }
 body.sumario div.box.vermelho li a{
 	color: #FFFFFF;
 	font-weight: bold;
 	line-height: 1.2em;
-}
-body.introducao div.panel h3,
-body.introducao div.panel h4{
-	font-size: 1em;
 }
 div#banner-dir{
 	overflow: hidden;
@@ -297,6 +289,26 @@ div#banner-dir div#banner-legenda {
 	font-size: 0.9em;
 	z-index: 50;
 }
+@media only screen and (min-width: 40.063em) {
+	div#banner-dir{
+		/*unrotate skew*/
+			-moz-transform: rotate(5deg)  skewX(5deg);
+			-webkit-transform: rotate(5deg) skewX(5deg);
+			-o-transform: rotate(5deg) skewX(5deg);
+			-ms-transform: rotate(5deg)  skewX(5deg);
+			transform: rotate(5deg)  skewX(5deg);
+		/*unrotate skew*/
+	}
+	div#banner-dir > *{
+		/*unskew*/
+			-moz-transform: skewX(-5deg);
+			-webkit-transform: skewX(-5deg);
+			-o-transform: skewX(-5deg);
+			-ms-transform: skewX(-5deg);
+			transform: skewX(-5deg);
+		/*unskew*/
+	}
+}
 div.meses > div{
 	padding-left: 0em;
 	padding-right: 0.5em;
@@ -319,11 +331,11 @@ div.meses > div{
 		}
 	div.meses > *{
 		/*unskew*/
-		-moz-transform: skewX(-5deg);
-		-webkit-transform: skewX(-5deg);
-		-o-transform: skewX(-5deg);
-		-ms-transform: skewX(-5deg);
-		transform: skewX(-5deg);
+			-moz-transform: skewX(-5deg);
+			-webkit-transform: skewX(-5deg);
+			-o-transform: skewX(-5deg);
+			-ms-transform: skewX(-5deg);
+			transform: skewX(-5deg);
 		/*unskew*/
 	}
 }
@@ -331,6 +343,10 @@ div.panel.mes h3,
 div.panel.mes h6,
 div.panel.mes p {
 	color: #FFFFFF;
+}
+div.panel *:last-child{
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 div.detalhe.rodape{
 	display: block;
@@ -359,10 +375,6 @@ div[role=footer] img {
 div[role=content] h3 img{
 	max-width: 50%;
 }
-div[role=content-wrap]{
-	padding-left: 0.5em;
-	padding-right: 1.5em;
-}
 div[role=content-footer]{
 	position: relative;
 	z-index: 0;
@@ -374,6 +386,7 @@ div.panel.cantoneiras {
 	border-image-width: 5;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+	padding: 0.5rem;
 }
 div.panel.cantoneiras > *:last-child{
 	margin-bottom: 0.5em;

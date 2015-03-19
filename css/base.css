@@ -28,17 +28,12 @@ h1, h2, h3, h4, h5{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-p, dd, dt{
+p, dd, dt, li{
 	margin-bottom: 0.5em;
 	font-family: Verdana, sans-serif;
 }
-li{
-	margin-bottom: 0.2em;
-	font-family: Verdana, sans-serif;
-}
-h1, h2, h3, h4, h5, h6, ul, ol, dl{
-	margin-top: 1.3em;
-	margin-bottom: 0.7em;
+h1, h2, h3, h4, h5, h6{
+	margin-top: 1em;
 	font-family: 'Lato', sans-serif;
 }
 h1:first-child,
@@ -49,8 +44,13 @@ h5:first-child,
 h6:first-child{
 	margin-top: 0;
 }
+ul:last-child,
+ol:last-child,
+dl.last-child{
+	bottom-top: 0;
+}
 h1, h2, h3, h4, h5, h6, p, li, dd, dt{
-	line-height: 1.1em;
+	line-height: 1.4em;
 }
 *.sub{
 	font-size: 0.5em;
@@ -62,4 +62,7 @@ h1, h2, h3, h4, h5, h6, p, li, dd, dt{
 }
 *.center{
 	text-align: center;
+}
+*.sem-recuo{
+	padding-left: 0;
 }
