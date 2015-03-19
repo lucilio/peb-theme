@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-p, dd, dt, li{
+p, dd, dt, li, ul, ol, dl{
 	margin-bottom: 0.5em;
 	font-family: Verdana, sans-serif;
 }
@@ -43,11 +43,6 @@ h4:first-child,
 h5:first-child,
 h6:first-child{
 	margin-top: 0;
-}
-ul:last-child,
-ol:last-child,
-dl.last-child{
-	bottom-top: 0;
 }
 h1, h2, h3, h4, h5, h6, p, li, dd, dt{
 	line-height: 1.4em;
