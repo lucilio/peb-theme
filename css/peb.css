@@ -48,6 +48,12 @@ body.home div[role=content] div.panel h3{
 	text-transform: none;
 	font-size: 1.25em;
 }
+body.home div[home=content]{
+	/*rotate*/
+		-sand-transform: rotate(355deg);
+		sand-transform: rotate(355deg);
+	/*rotate*/
+}
 @media only screen and (min-width: 40.063em) {
 	body.home div[role=content] div.panel,
 	body:not(.home) div[role=content]{
@@ -292,11 +298,11 @@ div#banner-dir div#banner-legenda {
 @media only screen and (min-width: 40.063em) {
 	div#banner-dir{
 		/*unrotate skew*/
-			-moz-transform: rotate(5deg)  skewX(5deg);
+			-moz-transform: rotate(5deg)	skewX(5deg);
 			-webkit-transform: rotate(5deg) skewX(5deg);
 			-o-transform: rotate(5deg) skewX(5deg);
-			-ms-transform: rotate(5deg)  skewX(5deg);
-			transform: rotate(5deg)  skewX(5deg);
+			-ms-transform: rotate(5deg)	skewX(5deg);
+			transform: rotate(5deg)	skewX(5deg);
 		/*unrotate skew*/
 	}
 	div#banner-dir > *{
@@ -322,11 +328,11 @@ div.meses > div{
 		height: 95%;
 		margin-bottom: 0.5em;
 		/*unrotate skew*/
-			-moz-transform: rotate(5deg)  skewX(5deg);
+			-moz-transform: rotate(5deg)	skewX(5deg);
 			-webkit-transform: rotate(5deg) skewX(5deg);
 			-o-transform: rotate(5deg) skewX(5deg);
-			-ms-transform: rotate(5deg)  skewX(5deg);
-			transform: rotate(5deg)  skewX(5deg);
+			-ms-transform: rotate(5deg)	skewX(5deg);
+			transform: rotate(5deg)	skewX(5deg);
 		/*unrotate skew*/
 		}
 	div.meses > *{
@@ -380,7 +386,7 @@ div[role=content-footer]{
 	z-index: 0;
 }
 div.panel.cantoneiras {
-	border: dotted #EE0000 10px;
+	border: double #EE0000 5px;
 	border-image-source: url('../img/cantoneiras-bordas.png');
 	border-image-slice: 100;
 	border-image-width: 5;
@@ -618,4 +624,8 @@ div.modelo-calendario img{
 *.negrito,
 *.negrito *:not(.nao-herdar){
 	font-weight: bold;
+}
+/*IEHell*/
+html[data-useragent*='MSIE 10.0'] div.panel.cantoneiras {
+
 }
