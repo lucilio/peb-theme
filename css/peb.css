@@ -219,7 +219,7 @@ body.mes div[role=content-header] span.mes:after{
 	content: " |";
 	font-weight: 900;
 }
-body.mes div.panel:not(.transparente):not(.perfil){
+body.mes div.panel:not(.transparente):not(.perfil):not(.cantoneiras){
 	padding: 0.5rem;
 }
 body.dicas div[role=content]{
@@ -385,7 +385,7 @@ div[role=content-footer]{
 	position: relative;
 	z-index: 0;
 }
-div.panel.cantoneiras {
+div.panel.cantoneiras_sem-uso {
 	border: double #EE0000 5px;
 	border-image-source: url('../img/cantoneiras-bordas.png');
 	border-image-slice: 100;
@@ -393,6 +393,15 @@ div.panel.cantoneiras {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	padding: 0.5rem;
+}
+div.panel.cantoneiras {
+	background-image: url('../img/cantoneiras-fundo-sup-esq.svg'), url('../img/cantoneiras-fundo-sup-dir.svg'), url('../img/cantoneiras-fundo-inf-dir.svg'), url('../img/cantoneiras-fundo-inf-esq.svg');
+	background-repeat: no-repeat;
+	background-position: top left, top right, bottom right, bottom left;
+	background-clip: border-box;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 1rem;
 }
 div.panel.cantoneiras > *:last-child{
 	margin-bottom: 0.5em;
